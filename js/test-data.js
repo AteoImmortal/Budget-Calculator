@@ -35,4 +35,4 @@ const generateTestData = (function(){
     }
 })();
 
-generateTestData.init();
+// generateTestData.init();

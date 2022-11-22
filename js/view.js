@@ -45,10 +45,10 @@ const viewController = (function(){
         if(int.length > 3) {
             newInt = '';
 
-            console.log("🚀 ~ file: view.js ~ line 42 ~ formatNumber ~ int.length", int.length);
+            // console.log("🚀 ~ file: view.js ~ line 42 ~ formatNumber ~ int.length", int.length);
 
             for( let i = 0; i < int.length / 3; i++ ) {
-                console.log("🚀 ~ file: view.js ~ line 45 ~ formatNumber ~ i", i);
+                // console.log("🚀 ~ file: view.js ~ line 45 ~ formatNumber ~ i", i);
 
                 // Формирую новую строку с номером
                 newInt =
@@ -59,9 +59,9 @@ const viewController = (function(){
                 // Конец строки, правая часть
                 newInt;
                 
-                console.log("🚀 ~ file: view.js ~ line 49 ~ formatNumber ~ newInt", newInt)
+                // console.log("🚀 ~ file: view.js ~ line 49 ~ formatNumber ~ newInt", newInt)
             }
-            console.log("🚀 ~ file: view.js ~ line 49 ~ formatNumber ~ newInt", newInt)
+            // console.log("🚀 ~ file: view.js ~ line 49 ~ formatNumber ~ newInt", newInt)
 
             // Убираем запятую в начале, если она есть
             if(newInt[0] === ',') {
@@ -172,10 +172,7 @@ const viewController = (function(){
         
         items.forEach(item => {
             // Выводим каждую запись массива во время прохода
-            console.log("🚀 ~ file: view.js ~ line 103 ~ updateItemPercentages ~ item", item);
-
             let el = document.getElementById(`exp-${item[0]}`).querySelector('.item__percent');
-            console.log("🚀 ~ file: view.js ~ line 105 ~ updateItemPercentages ~ el", el);
 
             if(item[1] >= 0) {
                 el.parentElement.style.display = 'block';

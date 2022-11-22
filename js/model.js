@@ -143,7 +143,7 @@ const modelController = (function(){
         getBudget: getBudget,
         deleteItem: deleteItem,
         test: function(){
-            console.log(data);
+            // console.log(data);
         }
     };
 

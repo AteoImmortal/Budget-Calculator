@@ -18,7 +18,6 @@ const controller = (function(budgetCtrl, uiCtrl){
 
         // Получаем данные по % с модели
         const idsAndPercents = budgetCtrl.getAllIdsAndPercentages();
-        console.log("🚀 ~ file: controller.js ~ line 21 ~ updataPercentages ~ idsAndPercents", idsAndPercents)
 
         // Обновляем UI с новыми %
         uiCtrl.updateItemPercentages(idsAndPercents);
@@ -43,7 +42,7 @@ const controller = (function(budgetCtrl, uiCtrl){
             // Добавить "запись" в UI
             uiCtrl.renderListItem(newItem, input.type);
             uiCtrl.clearFilds();
-            generateTestData.init();
+            // generateTestData.init();
             
             // Посчитать бюджет
             updateBudget();
